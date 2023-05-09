@@ -1,1 +1,0 @@
-# Everplastsa_prueba
