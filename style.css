@@ -1,5 +1,59 @@
 main{
-    width: auto;
-    height: auto;
-    display: flex;
+    text-align: center;
 }
+footer{
+    text-align: center;
+    align-items: center;
+    background-color: rgb(243, 243, 243);
+}
+.inicio{ /*Para la pagina principal antes de entrar*/
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}
+.link{
+    color: inherit;
+    text-decoration: none;
+}
+.boton-mio{
+    background-color: rgb(151, 255, 203);
+    color: #030303;
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+.textofooter{
+    display: inline;
+}
+/*Pagina con fotos emergentes*/
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+  
+.popup-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+  
+.close-button {
+    background-color: #ccc;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+  
