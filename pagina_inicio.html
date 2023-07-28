@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+  <!--Tengo que hacer que se adapte a todas las pantallas-->
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> <!--Bootstrap-->
   <link rel="stylesheet" href="style.css"> <!--CSS-->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> <!--Google fonts-->
+  <link rel="website icon" type="png" href="Media/fondo_1.jpg"> <!--Para ponerle foto a la pagina web-->
   <title>Everplast SA</title>
 </head>
 <body background="Media/fondo_1.jpg">
@@ -35,11 +37,11 @@
                 Productos
               </a>
               <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-                <li><a class="dropdown-item" href="#">Bolsas</a></li> <!--Poner link-->
-                <li><a class="dropdown-item" href="#">Mangas</a></li> <!--Poner link-->
-                <li><a class="dropdown-item" href="#">Laminas precortadas en bobina</a></li> <!--Poner link-->
-                <li><a class="dropdown-item" href="#">Cintas demarcatorias</a></li> <!--Poner link-->
-                <li><a class="dropdown-item" href="#">Peliculas termocontraibles</a></li> <!--Poner link-->
+                <li><a class="dropdown-item" href="#bolsas">Bolsas</a></li> <!--Poner link-->
+                <li><a class="dropdown-item" href="#mangas">Mangas</a></li> <!--Poner link-->
+                <li><a class="dropdown-item" href="#laminas">Laminas precortadas en bobina</a></li> <!--Poner link-->
+                <li><a class="dropdown-item" href="#cintas">Cintas demarcatorias</a></li> <!--Poner link-->
+                <li><a class="dropdown-item" href="#peliculas">Peliculas termocontraibles</a></li> <!--Poner link-->
               </ul>
             </li>
           </ul>
@@ -52,18 +54,18 @@
     <br><br><br><br>
     <div class="card">
       <div class="card-body">
-        <h3 class="contenido"> Nuestra Empresa</h3><br>
-        <p class="contenido">Somos una empresa con mas de 40 años de experiencia en el mercado, nos dedicamos a la transformación de poliolefinas para envases flexibles, los cuales podemos embellecer imprimiendo su logotipo en los mismos.</p>
-        <p class="contenido">Las bolsas, films tubos, cintas, láminas son artículos no-productivos aunque tienen tanta importancia en el desenvolvimiento de una empresa como otros insumos.</p>
-        <p class="contenido">La gente de Compras sabe que en épocas de ajustes y controles- cuando no se puede disponer de stocks permanentes- necesitan contar con sus insumos, justo a tiempo al mejor precio posible, y con razonables plazos de pago.</p>
-        <p class="contenido">Hay veces que es necesario comparar precios, porque el mercado así lo demanda, así que tenganos en cuenta para su próxima consulta.</p>
-        <p class="contenido">Para su comodidad y rapidez de decisión, contamos con asesoramiento técnico, telefónico, fax o mail.</p>
+        <h3> Nuestra Empresa</h3><br>
+        <p>Somos una empresa con mas de 40 años de experiencia en el mercado, nos dedicamos a la transformación de poliolefinas para envases flexibles, los cuales podemos embellecer imprimiendo su logotipo en los mismos.</p>
+        <p>Las bolsas, films tubos, cintas, láminas son artículos no-productivos aunque tienen tanta importancia en el desenvolvimiento de una empresa como otros insumos.</p>
+        <p>La gente de Compras sabe que en épocas de ajustes y controles- cuando no se puede disponer de stocks permanentes- necesitan contar con sus insumos, justo a tiempo al mejor precio posible, y con razonables plazos de pago.</p>
+        <p>Hay veces que es necesario comparar precios, porque el mercado así lo demanda, así que tenganos en cuenta para su próxima consulta.</p>
+        <p>Para su comodidad y rapidez de decisión, contamos con asesoramiento técnico, telefónico, fax o mail.</p>
         <div class="d-grid gap-2">
-          <button type="button" class="btn btn-outline-secondary boton-mio">
-            <a href="#contacto" class="link">Contacto</a>
+          <button>
+            <a href="#contacto" class="link">Contacto</a> <!--Poner bien los botones-->
           </button>
-          <button type="button" class="btn btn-outline-secondary boton-mio">
-            <a href="#productos" class="link">Productos</a> <!--Poner link-->
+          <button>
+            <a href="#productos" class="link">Productos</a> 
           </button>
 
         </div>
@@ -72,7 +74,7 @@
   </main>
   <!--Section-->
   <section>
-    <br>
+    <br><br><br>
     <!--Carrousel con imagenes-->
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
@@ -95,12 +97,324 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
+    <br><br><br>
+    <h1>Productos</h1>
     <div id="productos">
-      <!--Bolsas-->
-
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" id="bolsas">
+              <h2>Bolsas</h2>
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body" id="bolsas">
+              <ul>
+                <li><a href="#bolsas_1">Bolsas con manija para comercio (boutique/shopping)</a></li>
+                <li><a href="#bolsas_2">Bolsas industriales</a></li>
+                <li><a href="#bolsas_3">Bolsas para gondolas (perchitas)</a></li>
+                <li><a href="#bolsas_4">Bolsas para indumentaria textil</a></li>
+                <li><a href="#bolsas_5">Bolsas especiales</a></li>
+                <li><a href="#bolsas_6">Fundas para trajes</a></li>
+                <li><a href="#bolsas_7">Bolsas comunes</a></li>
+                <li><a href="#bolsas_8">Bolsas precortadas</a></li>
+              </ul>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" id="mangas" id="laminas">
+              <h2>Mangas y Laminas precortadas</h2>
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <ul>
+                <li><a href="#manga">Mangas</a></li>
+                <li><a href="#lamina">Laminas</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" id="laminas" id="peliculas">
+              <h2>Cintas demarcatorias y Peliculas termocontraibles</h2>
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <ul>
+                <li><a href="#cinta">Cintas</a></li>
+                <li><a href="#pelicula"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    
-  </section>---
+    <br><br>
+    <div id="bolsas_1">
+      <div class="card">
+        <div class="card-body">
+          <table>
+            <tbody>
+              <tr>
+                <td>
+                  <h3>Bolsas con manija para comercio (boutique/shopping)</h3>
+                  <p>En materiales de <strong>Baja densidad - Alta densidad - Lineal - Polipropileno</strong></p>
+                  <i><p><strong>Impresas con su Logotipo</strong></p></i>
+                </td>
+                <td>
+                  <img src="Bolsas/b_c.png" alt="Bolsas para Comercio">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    </div>
+    <br>
+    <div id="bolsas_2">
+      <div class="card">
+        <div class="card-body">
+          <table>
+            <tbody>
+              <tr>
+                <td>
+                  <h3>Bolsas Industriales</h3>
+                  <p>Termocotractiles, fondo redondo y cuadrado para tambores, Bolsones para pallets, Bolsones para cocinas, Bolsones para heladeras, Todo tipo de Uso Industrial.</p>
+                  <p>En materiales de <strong>Baja densidad - Alta densidad - Lineal - Polipropileno</strong></p>
+                  <i><p><strong>Impresas con su Logotipo</strong></p></i>
+                </td>
+                <td>
+                  <img src="Bolsas/b_i.png" alt="Bolsas Industriales">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div id="bolsas_3">
+      <div class="card">
+        <div class="card-body">
+          <table>
+            <tbody>
+              <tr>
+                <td>
+                  <h3>Bolsas para Gondolas (perchita)</h3>
+                  <p>En materiales de <strong>Baja densidad - Alta densidad - Lineal - Polipropileno</strong></p>
+                  <i><p><strong>Impresas con su Logotipo</strong></p></i>
+                </td>
+                <td>
+                  <img src="Bolsas/b_g.png" alt="Bolsas para Gondolas">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div id="bolsas_4">
+      <div class="card">
+        <div class="card-body">
+          <table>
+            <tbody>
+              <tr>
+                <td>
+                  <h3>Bolsas para Indumentaria Textil</h3>
+                  <p>En materiales de <strong>Baja densidad - Alta densidad - Lineal - Polipropileno</strong></p>
+                  <i><p><strong>Impresas con su Logotipo</strong></p></i>
+                </td>
+                <td>
+                  <img src="Bolsas/b_in.png" alt="Bolsas indumentaria">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div id="bolsas_5">
+      <div class="card">
+        <div class="card-body">
+          <table>
+            <tbody>
+              <tr>
+                <td>
+                  <h3>Bolsas Especiales</h3>
+                  <i><p><strong>Impresas con su Logotipo</strong></p></i>
+                </td>
+                <td>
+                  <img src="Bolsas/b_e.png" alt="Bolsas especiales">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div id="bolsas_6">
+      <div class="card">
+        <div class="card-body">
+          <table>
+            <tbody>
+              <tr>
+                <td>
+                  <h3>Bolsas para Trajes</h3>
+                  <p>Con fuelles - tubulares - impresas - con forma para percha - con manija sastre.</p>
+                  <p>En materiales de <strong>Baja densidad - Alta densidad - Lineal - Polipropileno</strong></p>
+                  <i><p><strong>Impresas con su Logotipo</strong></p></i>
+                </td>
+                <td>
+                  <img src="Bolsas/b_t.png" alt="Bolsas trajes">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div id="bolsas_7">
+      <div class="card">
+        <div class="card-body">
+          <table>
+            <tbody>
+              <tr>
+                <td>
+                  <h3>Bolsas Comunes</h3>
+                  <p>En materiales de <strong>Baja densidad - Alta densidad - Lineal - Polipropileno</strong></p>
+                  <i><p><strong>Impresas con su Logotipo</strong></p></i>
+                </td>
+                <td>
+                  <img src="Bolsas/b_co.png" alt="Bolsas comunes">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div id="bolsas_8">
+      <div class="card">
+        <div class="card-body">
+          <table>
+            <tbody>
+              <tr>
+                <td>
+                  <h3>Bolsas Precortadas</h3>
+                  <p>Termocotractiles, comunes.</p>
+                  <p>En materiales de <strong>Baja densidad - Alta densidad - Lineal - Polipropileno</strong></p>
+                  <i><p><strong>Impresas con su Logotipo</strong></p></i>
+                </td>
+                <td>
+                  <img src="Bolsas/b_p.png" alt="Bolsas precortadas">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div id="manga">
+      <div class="card">
+        <div class="card-body">
+          <table>
+            <tbody>
+              <tr>
+                <td>
+                  <h3>Mangas</h3>
+                  <p>Termocotractiles, comunes.</p>
+                  <p>En materiales de <strong>Baja densidad - Alta densidad - Lineal - Polipropileno</strong></p>
+                  <i><p><strong>Impresas con su Logotipo</strong></p></i>
+                </td>
+                <td>
+                  <img src="Bolsas/m.png" alt="mangas">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div id="lamina">
+      <div class="card">
+        <div class="card-body">
+          <table>
+            <tbody>
+              <tr>
+                <td>
+                  <h3>Laminas</h3>
+                  <p>Termocotractiles, comunes.</p>
+                  <p>En materiales de <strong>Baja densidad - Alta densidad - Lineal - Polipropileno</strong></p>
+                  <i><p><strong>Impresas con su Logotipo</strong></p></i>
+                </td>
+                <td>
+                  <img src="Bolsas/l.png" alt="laminas">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div id="cinta">
+      <div class="card">
+        <div class="card-body">
+          <table>
+            <tbody>
+              <tr>
+                <td>
+                  <h3>Cintas</h3>
+                  <p>Laminas, Tubos,
+                    Colores a elección.</p>
+                  <p>En materiales de <strong>Baja densidad - Alta densidad - Lineal - Polipropileno</strong></p>
+                  <i><p><strong>Impresas con su Logotipo</strong></p></i>
+                </td>
+                <td>
+                  <img src="Bolsas/c.png" alt="cinta">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div id="pelicula">
+      <div class="card">
+        <div class="card-body">
+          <table>
+            <tbody>
+              <tr>
+                <td>
+                  <h3>Peliculas termocontraibles</h3>
+                  <p>En materiales de <strong>Baja densidad multicapa - Monocapa</strong></p>
+                  <i><p><strong>Impresas con su Logotipo</strong></p></i>
+                </td>
+                <td>
+                  <img src="Bolsas/p.png" alt="pelicula">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <br>
+  </section>
+  <br><br>
   <!--Footer-->
   <footer id="contacto">
     <br><br>
